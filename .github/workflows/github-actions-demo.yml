@@ -1,6 +1,6 @@
-name: GitHub Actions Demo
+name: action modifier add
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [add.py]
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: add.py
