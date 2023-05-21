@@ -9,4 +9,4 @@ jobs:
       - name: Execution du fichier Python 
         run: |
           python add.py
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "🍏 l'instruction est ${{ job.status }}."
