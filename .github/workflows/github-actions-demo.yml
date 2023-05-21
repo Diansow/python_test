@@ -1,8 +1,14 @@
-name: action modifier add
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Exécution de add.py
+
 on: [push]
+
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: add.py
+  run:
+    runs-on: ubuntu-latest
     
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+    steps:
+    - name: Checkout du code source
+      uses: actions/checkout@v2
+      
+    - name: Exécution de add.py
+      run: python add.py
