@@ -5,7 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: List
         run: |
-        add.py
+          python add.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
