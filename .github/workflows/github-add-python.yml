@@ -1,12 +1,12 @@
 name: GitHub Actions add
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: Bienvenue ${{ github.actor }} sur Github Actions 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: List
+      - name: Execution du fichier Python 
         run: |
           python add.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
